@@ -17,7 +17,7 @@
 #$ -l h_vmem=3G     # asks for n Gb of memory
 # Send mail at submission and completion of script
 #$ -m be
-#$ -M p.sinclair@ed.ac.uk  
+#$ -M p.sinclair@ed.ac.uk
 
 # Set job runtime
 #$ -l h_rt=24:00:00               # I leave this set at 7 days (set at 24 hours for 1 day queue)
@@ -30,7 +30,7 @@ source ~/Programs/OpenFOAM/OpenFOAM-v1906/etc/bashrc
 
 foamListTimes -rm #openfoam command
 rm -r processor*
-cp 0/alpha.water.orig 0/alpha.water
+cp 0/alpha.biofilm.orig 0/alpha.biofilm
 
 #now set everything up
 blockMesh     #openfoam command
@@ -38,7 +38,7 @@ setFields     #openfoam command
 decomposePar     #openfoam command
 
 # can be useful to know the name of the computer where the job is running
-echo "Job running on $( hostname ) " 
+echo "Job running on $( hostname ) "
 
 # any output which normally goes to screen will go to the job log file
 
@@ -49,7 +49,7 @@ TIMEFORMAT=$'\n######################\nRun time was %0lR\n######################
 time {
 
 # put the usual mpirun command here
-# the shell variable $NSLOTS is the number of cores you asked for above  
+# the shell variable $NSLOTS is the number of cores you asked for above
 mpirun -np $NSLOTS interFoam -parallel > log
 
 }
