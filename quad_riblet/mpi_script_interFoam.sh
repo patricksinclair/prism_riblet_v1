@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#$ -N d_46_thickBiofilm_job # job name
+#$ -N d_23_thickBiofilm_job # job name
 #$ -V           # use all shell environment variables
 #$ -cwd         # run job in working directory
 # #$ -j y         # merge stdout and stderr to one file
