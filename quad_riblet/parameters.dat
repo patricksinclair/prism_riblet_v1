@@ -1,10 +1,14 @@
 //file containing numerical parameters for the system
-//p_0 1.;		//pressure at LHS
-//p_1 0;		//pressure at RHS
 
 u_max 0.18; //x_velocity at the top of the inlet linear gradient
 sigma 1e-3; //surface tension
 
+//// d = 92 settings //////////
+// these are the blockMeshDict parameters used for a riblet system with a riblet spacing of 92 microns
+d_92_params{
+    ribletX_nC 8; //the no. of x-cells in the blocks on/above the riblets
+    plateauX_nC 4; //the no. of x-cells in the blocks on/above the space between riblets
 
-//L 0.6485;	//length of system.  This depends on riblet setup so be careful. Also look at scaling.
-//h 1.;		//height of system.  Again, be aware of scaling factor in blockMeshDict.
+    surfaceY_nC 6; //the no. of y-cells in the blocks on the surface
+    fluidY_nC 10; //the n0. of y-cells in the blocks in the surrounding fluid (e.g. ocean)
+}
