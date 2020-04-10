@@ -28,6 +28,7 @@
 module load openmpi/3.0.2
 source ~/Programs/OpenFOAM/OpenFOAM-v1906/etc/bashrc
 
+rm log
 foamListTimes -rm #openfoam command
 rm -r processor*
 cp 0/alpha.biofilm.orig 0/alpha.biofilm

@@ -2,8 +2,10 @@
 
 u_max 0.18; //x_velocity at the top of the inlet linear gradient
 sigma 1e-3; //surface tension
+bf_thickness 21e-6; //biofilm thickness in metres
+bf_length 500e-6; //length of biofilm in metres
 
-//// d = 92 settings //////////
+//// various d settings //////////
 // these are the blockMeshDict parameters used for a riblet system with a riblet spacing of 92 microns
 d_92_params{
     ribletX_nC 8; //the no. of x-cells in the blocks on/above the riblets

@@ -14,6 +14,7 @@ FoamFile
     object      setFieldsDict;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+#includeIfPresent "../parameters.dat"
 
 defaultFieldValues
 (
@@ -24,7 +25,7 @@ regions
 (
     boxToCell
     {
-        box (0 0 -1) (500.e-6 60.e-6 1);
+        box (0 0 -1) ($bf_length $bf_thickness 1);
         fieldValues
         (
             volScalarFieldValue alpha.biofilm 1
