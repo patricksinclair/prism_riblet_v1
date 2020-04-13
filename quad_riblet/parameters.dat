@@ -8,7 +8,7 @@ bf_length 500e-6; //length of biofilm in metres
 //// various d settings //////////
 // these are the blockMeshDict parameters used for a riblet system with a riblet spacing of 92 microns
 d_92_params{
-    //N= 4
+    //N = 4
     ribletX_nC 8; //the no. of x-cells in the blocks on/above the riblets
     plateauX_nC 4; //the no. of x-cells in the blocks on/above the space between riblets
 
@@ -17,6 +17,7 @@ d_92_params{
 }
 
 d_46_params{
+    //N = 6
     ribletX_nC 5; //the no. of x-cells in the blocks on/above the riblets
     plateauX_nC 3; //the no. of x-cells in the blocks on/above the space between riblets
 
