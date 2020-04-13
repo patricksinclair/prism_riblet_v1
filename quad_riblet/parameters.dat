@@ -2,7 +2,7 @@
 
 u_max 0.18; //x_velocity at the top of the inlet linear gradient
 sigma 1e-3; //surface tension
-bf_thickness 21e-6; //biofilm thickness in metres
+bf_thickness 42e-6; //biofilm thickness in metres
 bf_length 500e-6; //length of biofilm in metres
 
 //// various d settings //////////
