@@ -16,3 +16,5 @@ Biofilm thicknesses are:
 thick = 60 microns
 thin = 21 microns
 level = 42 microns
+//////////////////////////////////////////////
+Gravity was still turned on, I've turned it off now, see if it changes anything.
