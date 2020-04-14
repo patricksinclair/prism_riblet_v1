@@ -22,12 +22,24 @@ convertToMeters 1e-6;
 //d = 92 : 4
 //d = 46 : 6
 //d = 23 : 9
+//
+// ribletX_nC $d_92_params.ribletX_nC; //the no. of x-cells in the blocks on/above the riblets
+// plateauX_nC $d_92_params.plateauX_nC; //the no. of x-cells in the blocks on/above the space between riblets
+//
+// surfaceY_nC $d_92_params.surfaceY_nC; //the no. of y-cells in the blocks on the surface
+// fluidY_nC $d_92_params.fluidY_nC; //the n0. of y-cells in the blocks in the surrounding fluid (e.g. ocean)
 
-ribletX_nC $d_23_params.ribletX_nC; //the no. of x-cells in the blocks on/above the riblets
-plateauX_nC $d_23_params.plateauX_nC; //the no. of x-cells in the blocks on/above the space between riblets
+ribletX_nC $d_46_params.ribletX_nC; //the no. of x-cells in the blocks on/above the riblets
+plateauX_nC $d_46_params.plateauX_nC; //the no. of x-cells in the blocks on/above the space between riblets
 
-surfaceY_nC $d_23_params.surfaceY_nC; //the no. of y-cells in the blocks on the surface
-fluidY_nC $d_23_params.fluidY_nC; //the n0. of y-cells in the blocks in the surrounding fluid (e.g. ocean)
+surfaceY_nC $d_46_params.surfaceY_nC; //the no. of y-cells in the blocks on the surface
+fluidY_nC $d_46_params.fluidY_nC; //the n0. of y-cells in the blocks in the surrounding fluid (e.g. ocean)
+
+// ribletX_nC $d_23_params.ribletX_nC; //the no. of x-cells in the blocks on/above the riblets
+// plateauX_nC $d_23_params.plateauX_nC; //the no. of x-cells in the blocks on/above the space between riblets
+//
+// surfaceY_nC $d_23_params.surfaceY_nC; //the no. of y-cells in the blocks on the surface
+// fluidY_nC $d_23_params.fluidY_nC; //the n0. of y-cells in the blocks in the surrounding fluid (e.g. ocean)
 
 LBlockX_nC 16; //no. of x-cells in the inlet blocks
 RBlockX_nC 25; //no. of x-cells in the outlet blocks
